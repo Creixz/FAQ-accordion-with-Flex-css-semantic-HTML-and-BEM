@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-family: "Work Sans", sans-serif;
+    }
+
+    body {
+      background: url(/assets/images/background-pattern-desktop.svg) no-repeat;
+      background-color: hsl(275, 100%, 97%);
+    }
+
+    .container {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      margin-top: 167.5px;
+      justify-content: center;
+    }
+
+    .card {
+      width: 600px;
+      background-color: #FFFFFF;
+      border-radius: 1rem;
+      padding: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .card__title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .card__title-icon {
+      margin-right: 1.5rem;
+    }
+
+    .card__title-title {
+      font-size: 3.5rem;
+    }
+
+    .card__main {}
+
+    .card__question {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      margin-bottom: 1.5rem;
+    }
+
+    .card__question:hover {
+      color: #AD28EB;
+    }
+
+    .card__question-question {
+      font-size: 18px;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+
+    .card__question-plus {
+      display: none;
+    }
+
+    .card__question-minus {
+      display: none;
+    }
+
+    .card__asnwer {
+      line-height: 1.5;
+      color: #8B6990;
+      display: none;
+    }
+
+    .visible {
+      display: block;
+    }
+
+    .divider {
+      border: none;
+      background-color: hsl(275, 100%, 97%);
+      height: 1px;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .attribution {
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .attribution a {
+      text-decoration: none;
+      font-weight: 700;
+      color: hsl(292, 100%, 38%);
+    }
+
+    @media only screen and (max-width: 425px) {
+
+      .card {
+        width: 327px;
+        padding: 1.5rem;
+      }
+
+      .card__title {
+        margin-bottom: 1.5rem;
+      }
+
+      .card__title-icon {
+        width: 24px;
+        margin-right: 1.5rem;
+      }
+
+      .card__title-title {
+        font-size: 2rem;
+      }
+
+      .card__question-question {
+        font-size: 1rem;
+      }
+
+      .card__question-plus,
+      .card__question-minus {
+        margin-left: 1.5rem;
+      }
+
+      .card__asnwer {
+        font-size: 14px;
+      }
+
+    }
